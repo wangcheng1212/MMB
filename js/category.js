@@ -22,7 +22,7 @@ $(function () {
                 titleid: id,
             },
             success: function (info) {
-                // console.log(info);
+                console.log(info);
                 $(".cs_second").html(template("tpl2", info));
             }
         })
