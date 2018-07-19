@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./font/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/media.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/category.css">
 </head>
 
 <body>
@@ -37,48 +37,20 @@
                         <button>搜索</button>
                     </div>
 
-                    <!-- nav -->
-                    <div class="nav">
-                        <ul class="mui-clearfix ">
-                           <!-- 坑 -->
-                            
+                    <!-- 分类页功能界面 -->
+                    <div class="cate_search">
+                        <ul class="mui-table-view"> 
+                            <!-- 坑 -->
                         </ul>
-
                     </div>
 
-                    <!-- 推荐 -->
-                    <div class="recommend">
-                        <div class="r_title">
-                            <div class="mui-pull-left">超值折扣推荐</div>
-                            <div class="mui-pull-right">
-                                <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
-                            </div>
-                        </div>
-                        <div class="r_content">
-                            <ul class="mui-clearfix">
-                                <!-- 坑 -->
-                            
-                            </ul>
-
-                            <button class="r_more">
-                                <a href="#">更多优惠信息 »</a>
-                            </button>
-
-                            <div class="r_title">
-                                <div class="mui-pull-left">品牌排行</div>
-                                <div class="mui-pull-right">
-                                    <img src="http://www.zuyushop.com/wap/images/more.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <!-- 底部 -->
                 <div class="footer">
 
                     <div class="f_top">
                         <a href="login.html">登录</a>
-                        <a href="register.html">注册</a>
+                        <a href="register">注册</a>
                         <a href="#" class="back_top">
                             <span class="fa fa-arrow-up"></span>返回顶部</a>
 
@@ -105,42 +77,31 @@
     <script src="./lib/mui/js/mui.min.js"></script>
     <script src="./lib/artTemplate/template-web.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/category.js"></script>
 
     <!-- more模板 -->
     <script type="text/html" id="tpl">
         {{each result v i}}
-        <li>
-            <a href="{{v.titlehref}}">
-                {{@v.img}}
-                <p>{{v.name}}</p>
-            </a>
+        <li class="mui-table-view-cell mui-collapse li_title" data-id="{{v.titleId}}">
+            <a class="mui-navigate-right"  href="#">{{v.title}}</a>
+            <div class="mui-collapse-content">
+                <ul class="mui-clearfix cs_second"> 
+                    
+                </ul>
+            </div>
         </li>
         {{/each}}
     </script>
 
-    <!-- 折扣模板 -->
-    <script type="text/html" id="tpl1">
+    <script type="text/html" id="tpl2">
         {{each result v i}}
         <li>
-            <a href="#">
-                <div class="r_left">
-                    {{@v.productImg2}}
-                </div>
-                <div class="r_right">
-                    <div class="rr_top">
-                        <span>{{v.productName}}</span>
-                        <span>{{v.productPinkage}}</span>
-                    </div>
-                    <div class="rr_bottom">
-                        <span class="mui-pull-left">{{v.productFrom}}|{{v.productTime}}</span>
-                        <span class="mui-icon mui-icon-chat mui-pull-right">{{v.productComCount}}</span>
-                    </div>
-                </div>
-            </a>
+            <a href="#">{{v.category}}</a>
         </li>
         {{/each}}
     </script>
+   
+    
 </body>
 
 </html>

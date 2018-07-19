@@ -5,7 +5,7 @@ $(function () {
         url: 'http://127.0.0.1:9090/api/getindexmenu',
         dataType: 'json',
         success: function (info) {
-            // console.log(info);
+            console.log(info);
             $(".nav ul").html(template("tpl", info));
 
         // 点击更多显示与隐藏
@@ -25,6 +25,7 @@ $(function () {
             $(".r_content ul").html(template("tpl1", info));
         }
     })
+
 
 
 

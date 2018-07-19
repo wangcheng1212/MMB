@@ -1,0 +1,58 @@
+body {
+  font-size: 16px;
+}
+.main {
+  background-color: #fff;
+}
+.main .search {
+  height: 0.5rem;
+  padding: .1rem .83rem 0 .1rem;
+  position: relative;
+}
+.main .search input {
+  height: .3rem;
+  padding: .1rem .2rem;
+  border-radius: .15rem;
+  font-size: .14rem;
+  border: none;
+  background-color: #f1f1f1;
+}
+.main .search button {
+  width: 0.63rem;
+  height: 0.3rem;
+  margin: .1rem;
+  border-radius: .15rem;
+  font-size: .18rem;
+  border: none;
+  background-color: #ff841d;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main .cate_search {
+  padding-top: .1rem;
+  background-color: #eee;
+}
+.main .cate_search > ul > li > a {
+  font-weight: bold;
+  background-color: #eee;
+}
+.main .cate_search .mui-collapse-content {
+  padding: 0;
+}
+.main .cate_search .cs_second {
+  text-align: center;
+}
+.main .cate_search .cs_second li {
+  float: left;
+  width: 33.33%;
+}
+.main .cate_search .cs_second li a {
+  margin: 0;
+  height: .39rem;
+  line-height: 0.39rem;
+  font-size: .14rem;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
