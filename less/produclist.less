@@ -1,25 +1,22 @@
-body{
+body {
     font-size: 16px;
 }
+
 .main {
-    background-color: #fff;
-    // 搜索栏---------------------------------------------------------
-    .search{
+    background-color: #fff; // 搜索栏---------------------------------------------------------
+    .search {
         height: 0.5rem;
-        padding: .1rem .83rem 0 .1rem;
-        // background-color: pink;
+        padding: .1rem .83rem 0 .1rem; // background-color: pink;
         position: relative;
-        
-        input{
+        input {
             height: .3rem;
             padding: .1rem .2rem;
             border-radius: .15rem;
             font-size: .14rem;
             border: none;
             background-color: #f1f1f1;
-        
         }
-        button{
+        button {
             width: 0.63rem;
             height: 0.3rem;
             margin: .1rem;
@@ -32,14 +29,12 @@ body{
             right: 0;
             top: 0;
         }
-        
-    }
-    // nav---------------------------------------------------------
-    .nav{
+    } // nav---------------------------------------------------------
+    .nav {
         background-color: #f1f1f1;
         padding-top: .1rem;
         position: relative;
-        .n_left{
+        .n_left {
             height: 0.4rem;
             line-height: 0.4rem;
             background-image: linear-gradient(#fff, #eee);
@@ -47,13 +42,13 @@ body{
             border-bottom: 1px solid #ccc;
             width: 100%;
         }
-        a{
+        a {
             display: inline-block;
             font-size: .14rem;
             padding-left: .05rem;
             color: #444;
         }
-        button{
+        button {
             height: 0.3rem;
             margin-top: .15rem;
             margin-right: .1rem;
@@ -64,80 +59,69 @@ body{
             top: 0;
         }
     }
-
-    .r_content{
-        
-        li{
+    .r_content {
+        li {
             padding: .1rem .1rem .1rem 1.1rem;
-
             height: 1.2rem;
             position: relative;
-            border-bottom:1px solid #ccc;
-
-        }
-        .r_left{
-          width: 1rem;
-          height: 1rem;  
-          background-color: pink;
-          margin-left: .1rem;
-          margin-top: .1rem;
-          position: absolute;
-          top: 0;
-          left: 0;
-          font-size: .12rem;
-        }
-        .r_right{
-            width: 100%;
-            padding-left: .2rem;
+            border-bottom: 1px solid #ccc;
             
         }
-        .rr_top{
+        .r_left {
+            width: 1rem;
+            height: 1rem;
+            background-color: pink;
+            margin-left: .1rem;
+            margin-top: .1rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: .12rem;
+        }
+        .r_right {
+            width: 100%;
+            padding-left: .2rem;
+        }
+        .rr_top {
             width: 100%;
             color: #333;
             height: 0.8rem;
             font-size: .14rem;
-            div{
+            div {
                 color: red;
                 height: 0.6rem;
                 line-height: 0.6rem;
-                font-size: .20rem;
-                // background-color: pink;
+                font-size: .20rem; // background-color: pink;
             }
+            
         }
-        .rr_bottom{
-            span{
+        .rr_bottom {
+            span {
                 font-size: .12rem;
                 color: #666;
             }
         }
     }
-
-    .pagenation{
-
-        height: 0.5rem;
-        // background-color: pink;
+    .pagenation {
+        height: 0.5rem; // background-color: pink;
         text-align: center;
         padding-top: .05rem;
         .page_left,
         .page_middle,
-        .page_right{
+        .page_right {
             width: 33.33%;
             float: left;
         }
         .page_left,
-        .page_right{
+        .page_right {
             padding-top: .03rem;
         }
-        
-        select{
+        select {
             width: .80rem;
             height: .36rem;
             padding: .01rem .1rem;
             border: 1px solid #ccc !important;
             background: url("../images/arrow.png") right center no-repeat transparent;
         }
-        
     }
-  
-    
 }

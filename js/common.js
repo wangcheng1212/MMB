@@ -18,7 +18,7 @@ function getSearchObj() {
     var arr = search.split("&");
     // console.log(arr);
     var obj = {};
-    for (var i = 0; i < arr.length - 1; i++) {
+    for (var i = 0; i < arr.length; i++) {
         var key = arr[i].split("=")[0];
         var value = arr[i].split("=")[1];
         // console.log(key);

@@ -12,7 +12,6 @@ $(function () {
         dateType: 'json',
         success: function (info) {  
             console.log(info);
-
             
         }
     })

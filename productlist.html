@@ -60,8 +60,8 @@
                             <div class="page_left">
                                 <button>上一页</button>
                             </div>
-                            <div class="page_middle ">
-
+                            <div class="page_middle">
+                                <!-- 坑 -->
                             </div>
                             <div class="page_right">
                                 <button>下一页</button>
@@ -148,10 +148,9 @@
 
     <!-- 分页渲染 -->
     <script type="text/html" id="tpl2">
-
         <select name="select" id="page">
             <% for (var i = 1; i<= numPage; i++){%>
-                <option value="{{i}}">{{i}}/{{numPage}}</option>
+                <option value="{{i}}" <%= pageId==i?'selected':'' %>>{{i}}/{{numPage}}</option>
             <% } %>
         </select>
     </script>
