@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
     <link rel="stylesheet" href="./font/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/media.css">
+    <!-- <link rel="stylesheet" href="./css/media.css"> -->
     <link rel="stylesheet" href="./css/produclist.css">
 </head>
 
@@ -40,18 +40,8 @@
                     <!-- 三级导航 -->
                     <div class="nav mui-clearfix">
                         <div class="n_left ">
-                            <a href="index.html">
-                                <span>首页 ></span>
 
-                            </a>
-                            <a href="category.html">
-                                <span>全部分类 >
-                                </span>
-                            </a>
-                            <a href="category.html">
-                                <span>电视
-                                </span>
-                            </a>
+                            <!-- 坑 -->
                         </div>
 
                         <button>筛选</button>
@@ -61,42 +51,22 @@
                     <!-- content -->
                     <div class="r_content">
                         <ul class="mui-clearfix">
-                            <li>
-                                <a href="#">
-                                    <div class="r_left">
-
-                                    </div>
-                                    <div class="r_right">
-                                        <div class="rr_top">
-                                            <span>乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</span>
-                                            <div>&yen; 1999.00</div>
-                                        </div>
-                                        <div class="rr_bottom">
-                                            <span>报价(6)</span>
-                                            <span>评论(3522)</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="r_left">
-
-                                    </div>
-                                    <div class="r_right">
-                                        <div class="rr_top">
-                                            <span>乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</span>
-                                            <div>&yen; 1999.00</div>
-                                        </div>
-                                        <div class="rr_bottom">
-                                            <span>报价(6)</span>
-                                            <span>评论(3522)</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                            <!-- 坑 -->
                         </ul>
 
+                        <!-- 分页 -->
+                        <div class="pagenation mui-clearfix">
+
+                            <div class="page_left">
+                                <button>上一页</button>
+                            </div>
+                            <div class="page_middle ">
+
+                            </div>
+                            <div class="page_right">
+                                <button>下一页</button>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -134,10 +104,57 @@
     <script src="./lib/mui/js/mui.min.js"></script>
     <script src="./lib/artTemplate/template-web.js"></script>
     <script src="./js/common.js"></script>
-    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/productlist.js"></script>
 
-    <!-- more模板 -->
+    <!-- 导航模板 -->
+    <script type="text/html" id="tpl">
+        <a href="index.html">
+            <span>首页 ></span>
 
+        </a>
+        <a href="category.html">
+            <span>全部分类 >
+            </span>
+        </a>
+        {{each result v i}}
+        <a href="productlist.html">
+            <span>{{v.category}}</span>
+        </a>
+        {{/each}}
+    </script>
+
+    <!-- 商品列表页 -->
+    <script type="text/html" id="tpl1">
+        {{each result v i}}
+        <li>
+            <a href="#">
+                <div class="r_left">
+                    {{@v.productImg}}
+                </div>
+                <div class="r_right">
+                    <div class="rr_top">
+                        <span>{{v.productName}}</span>
+                        <div>{{v.productPrice}}</div>
+                    </div>
+                    <div class="rr_bottom">
+                        <span>{{v.productQuote}}</span>
+                        <span>{{v.productCom}}</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+    <!-- 分页渲染 -->
+    <script type="text/html" id="tpl2">
+
+        <select name="select" id="page">
+            <% for (var i = 1; i<= numPage; i++){%>
+                <option value="{{i}}">{{i}}/{{numPage}}</option>
+            <% } %>
+        </select>
+    </script>
 </body>
 
 </html>

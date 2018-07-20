@@ -74,6 +74,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  font-size: .12rem;
 }
 .main .r_content .r_right {
   width: 100%;
@@ -94,4 +95,26 @@ body {
 .main .r_content .rr_bottom span {
   font-size: .12rem;
   color: #666;
+}
+.main .pagenation {
+  height: 0.5rem;
+  text-align: center;
+  padding-top: .05rem;
+}
+.main .pagenation .page_left,
+.main .pagenation .page_middle,
+.main .pagenation .page_right {
+  width: 33.33%;
+  float: left;
+}
+.main .pagenation .page_left,
+.main .pagenation .page_right {
+  padding-top: .03rem;
+}
+.main .pagenation select {
+  width: .80rem;
+  height: .36rem;
+  padding: .01rem .1rem;
+  border: 1px solid #ccc !important;
+  background: url("../images/arrow.png") right center no-repeat transparent;
 }
