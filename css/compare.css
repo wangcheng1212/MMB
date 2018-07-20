@@ -1,0 +1,152 @@
+body {
+  font-size: 16px;
+}
+.main {
+  background-color: #fff;
+}
+.main .search {
+  height: 0.5rem;
+  padding: .1rem .83rem 0 .1rem;
+  position: relative;
+}
+.main .search input {
+  height: .3rem;
+  padding: .1rem .2rem;
+  border-radius: .15rem;
+  font-size: .14rem;
+  border: none;
+  background-color: #f1f1f1;
+}
+.main .search button {
+  width: 0.63rem;
+  height: 0.3rem;
+  margin: .1rem;
+  border-radius: .15rem;
+  font-size: .18rem;
+  border: none;
+  background-color: #ff841d;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main .nav {
+  background-color: #f1f1f1;
+  padding-top: .1rem;
+  position: relative;
+}
+.main .nav .n_left {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  background-image: linear-gradient(#fff, #eee);
+  padding: 0 .05rem;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+.main .nav a {
+  display: inline-block;
+  font-size: .14rem;
+  padding-left: .05rem;
+  color: #444;
+}
+.main .nav button {
+  height: 0.3rem;
+  margin-top: .15rem;
+  margin-right: .1rem;
+  background-image: linear-gradient(#ccc, #fff);
+  border-radius: .05rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main .con_title {
+  text-align: center;
+}
+.main .con_title h3 {
+  height: 2rem;
+  padding-top: .2rem;
+  font-size: .16rem;
+  font-weight: normal;
+}
+.main .con_title img {
+  width: 1.7rem;
+  margin: 0 auto;
+}
+.main .con_title .img {
+  position: relative;
+}
+.main .con_title .img a {
+  width: .4rem;
+  height: .4rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.4rem;
+  background-color: #96d900;
+  color: #fff;
+  font-size: .14rem;
+  position: absolute;
+  right: .2rem;
+  bottom: .2rem;
+}
+.main .con_title .tab {
+  background-color: pink;
+}
+.main .con_title .tab li {
+  float: left;
+  width: 33.33%;
+  border: 1px solid #c14d00;
+}
+.main .con_title .tab li:first-child {
+  background-image: linear-gradient(to right, #ff9c1b, #ff9e1f);
+}
+.main .con_title .tab li:nth-child(2) {
+  background-image: linear-gradient(to right, #ffcb3c, #ffc62b);
+}
+.main .con_title .tab li:last-child {
+  background-image: linear-gradient(to right, #ffd050, #ffd050);
+}
+.main .con_title .tab li a {
+  color: #fff;
+  height: 0.4rem;
+  line-height: 0.4rem;
+}
+.main .con_title .jd {
+  height: 0.4rem;
+}
+.main .con_title .statement {
+  height: 0.55rem;
+  line-height: 0.55rem;
+  font-size: .12rem;
+  text-align: left;
+  padding-left: .1rem;
+}
+.main .comment .cmt_title {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  text-align: center;
+  color: #000;
+  border-top: 5px solid #747474;
+  background-color: #dbdbdb;
+}
+.main .comment li {
+  padding: .1rem;
+  font-size: .12rem;
+  color: #666;
+  line-height: 0.2rem;
+  border-bottom: 1px solid #ccc;
+}
+.main .comment .ct_more {
+  height: 0.5rem;
+  text-align: center;
+  padding-top: .1rem;
+}
+.main .comment .ct_more button {
+  width: 90%;
+  height: 0.32rem;
+  font-size: .14rem;
+  background-image: linear-gradient(#f1f1f1, #dcdcdc);
+  border-radius: .1rem;
+}
+.hidden {
+  display: none;
+}
