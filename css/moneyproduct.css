@@ -1,0 +1,127 @@
+body {
+  font-size: 16px;
+}
+.header {
+  text-align: center;
+}
+.header .pull_middle {
+  display: inline-block;
+}
+.header .pull_middle h3 {
+  display: inline-block;
+  font-size: .18rem;
+  color: #fff;
+  font-weight: normal;
+}
+.main {
+  background-color: #fff;
+  padding: .1rem;
+}
+.main h3 {
+  font-size: .2rem;
+  color: #666;
+}
+.main .author {
+  font-size: .12rem;
+  color: #888;
+  height: 0.3rem;
+  line-height: 0.3rem;
+}
+.main .summary .s_img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.main .big_img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 auto;
+}
+.main ul > li {
+  text-align: center;
+}
+.main .buy {
+  height: 0.7rem;
+  line-height: 0.7rem;
+  padding-top: .2rem;
+  margin-bottom: .2rem;
+}
+.main .buy button {
+  width: 90%;
+  height: 0.3rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #ff9000;
+  color: #fff;
+}
+.main #disstorck {
+  font-size: .14rem;
+  width: 1.4rem;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: .1rem auto;
+}
+.main #disstorck strong {
+  width: 50%;
+  color: #f27b04;
+  float: right;
+}
+.main #disstorck li a {
+  width: 1.2rem;
+  margin: 0 auto;
+  border-bottom: 1px dashed #ccc;
+}
+.main #disstorck span {
+  width: 50%;
+}
+.main .ui-border-t {
+  padding-top: .2rem;
+}
+.main .ui-border-t h2 {
+  font-size: .18rem;
+  font-weight: 400;
+}
+.main .ui-border-t .form {
+  position: relative;
+}
+.main .ui-border-t input {
+  position: absolute;
+  right: 0;
+  bottom: .2rem;
+  background-color: #ff841d;
+  color: #fff;
+  font-size: .12rem;
+  border: none;
+}
+.main .tit {
+  font-size: .18rem;
+  font-weight: 400;
+  height: 0.4rem;
+}
+.main .list {
+  color: #666;
+  font-size: .14rem;
+  overflow: hidden;
+  margin-bottom: .2rem;
+}
+.main .list .userimg {
+  float: left;
+}
+.main .list img {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+}
+.main .list .con {
+  padding-left: .5rem;
+}
+.main .list .name {
+  height: 0.2rem;
+}
+.main .list .username {
+  float: left;
+  color: #5997c0;
+}
+.main .list .content {
+  float: left;
+  width: 100%;
+  text-align: left;
+}

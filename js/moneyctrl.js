@@ -26,9 +26,12 @@
     })
 
     // 中间
-    $("#page").on("change","option", function () {  
+    $(".page_middle select").on("change", function () {  
+        
         console.log("haha");
         
+        // pageid =
+        // location.href =
     })
 
 
@@ -43,11 +46,14 @@
             },
             success: function (info) {  
                 console.log(info);
-                $(".main ul").html(template("tpl1", info));
-                
+                $(".main ul").html(template("tpl1", info));//渲染主体
+                $(".page_middle select").html(template("tpl2", info));//渲染分页
+
                 numPage = Math.ceil(info.totalCount / info.pagesize);//页数
-                // console.log(numPage);
-                
+                info.numPage = numPage;
+                info.pageid = pageid;
+                console.log(numPage);
+                console.log(pageid);
             }
         })
     }

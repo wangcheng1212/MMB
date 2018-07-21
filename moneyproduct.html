@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./font/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/common.css">
     <!-- <link rel="stylesheet" href="./css/media.css"> -->
-    <link rel="stylesheet" href="./css/moneyctrl.css">
+    <link rel="stylesheet" href="./css/moneyproduct.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                         </a>
                     </div>
                     <div class="pull_middle">
-                        <h3>省钱控 - 最新优惠</h3>
+                        <h3>国内折扣</h3>
                     </div>
                     <div class="mui-pull-right h_app">
                         <img src="./images/header_app.png" alt="">
@@ -34,30 +34,11 @@
                 </div>
                 <!-- 主体 -->
                 <div class="main">
-                    <ul class="mui-clearfix">
-                        <!-- 坑 -->
-                    </ul>
-
-
-                    <!-- 分页 -->
-                    <div class="pagenation mui-clearfix">
-
-                        <div class="page_left">
-                            <button>上一页</button>
-                        </div>
-                        <div class="page_middle">
-                            <!-- 坑 -->
-                            <select name="select" id="page">
-                                <!-- 坑 -->
-                            </select>
-
-                        </div>
-                        <div class="page_right">
-                            <button>下一页</button>
-                        </div>
-                    </div>
-
+                   
+                    <!-- 大坑 -->
                 </div>
+
+
 
                 <!-- 底部 -->
                 <div class="footer">
@@ -88,37 +69,39 @@
     <script src="./lib/mui/js/mui.min.js"></script>
     <script src="./lib/artTemplate/template-web.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/moneyctrl.js"></script>
+    <script src="./js/moneyproduct.js"></script>
 
-    <!-- 折扣模板 -->
-    <script type="text/html" id="tpl1">
+    <script type="text/html" id="tpl">
         {{each result v i}}
-        <li>
-            <a href="moneyproduct.html?productid={{v.productId}}">
-                <div class="r_left">
+     <h3>{{v.productName}}</h3>
+        <div class="author">
+            <span>{{v.productFrom}}</span>
+            <span>{{v.productTime}}</span>
+            <span>{{v.productTips}}</span>
+        </div>
+        <div class="summary mui-clearfix">
+            <div class="mui-pull-right s_img">
                     {{@v.productImg2}}
-                </div>
-                <div class="r_right">
-                    <div class="rr_top">
-                        <span>{{v.productName}}</span>
-                        <span>{{v.productPinkage}}</span>
-                    </div>
-                    <div class="rr_bottom">
-                        <span class="mui-pull-left">{{v.productFrom}}|{{v.productTime}}</span>
-                        <span class="mui-icon mui-icon-chat mui-pull-right">{{v.productComCount}}</span>
-                    </div>
-                </div>
-            </a>
-        </li>
+            </div>
+            <p>{{v.productInfo}}</p>
+            <p>{{v.productInfo1}}</p>
+            <div class="big_img">
+                {{@v.productImgLg}}
+            </div>
+            {{@v.productCity}}
+
+        </div>
+        <div class="buy">
+            <button>前往购买</button>
+        </div>
+        <div class="wx">
+            <img src="./images/mmbweixin2.png" alt="">
+        </div>
+        {{@v.productComment}}
         {{/each}}
+    
     </script>
 
-    <!-- 中间分页 -->
-    <script type="text/html" id="tpl2">
-        <% for(var i=1 ;i<=numPage;i++) {%>
-            <option value="<%= i %>" <% pageid==i?'selected':'' %> ><%= i %>/{{numPage}}</option>
-        <% } %>
-    </script>
 
 </body>
 
