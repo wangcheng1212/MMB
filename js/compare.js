@@ -1,9 +1,10 @@
 $(function () {  
 
-    // 商品详情
     var productId = getSearch("productId");
     console.log(productId);
     
+    // 商品详情
+
     $.ajax({
         url: 'http://mmb.ittun.com/api/getproduct',
         data: {
@@ -13,6 +14,7 @@ $(function () {
         success: function (info) {  
             console.log(info);
             
+            $(".ct").html(template("tpl", info));
         }
     })
 

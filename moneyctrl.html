@@ -1,26 +1,125 @@
-"
-<table width="100%">
-    <tbody>
-        <tr>
-            <td rowspan="2" class="p_pic" valign="top">
-                <a href="redirect.aspx?webid=4&amp;bjid=492469961&amp;tourl=http://www.amazon.cn/gp/product/B01KJR4YC8&amp;y=bijia"
-                    target="_blank" onclick="trackLog('商品购买','比价页面');">
-                    <img src="http://sf.manmanbuy.com/images/sitelogo/4.png">
-                </a>
-            </td>
-            <td>
-                <a href="redirect.aspx?webid=4&amp;bjid=492469961&amp;tourl=http://www.amazon.cn/gp/product/B01KJR4YC8&amp;y=bijia"
-                    target="_blank" onclick="trackLog('商品购买','比价页面');">中国亚马逊</a>
-            </td>
-            <td class="red"> ￥4990.00 </td>
-            <td align="center" width="60">
-                <span style="display: inline-block;width: 56px;height: 24px;border-radius: 6px;text-align: center;line-height: 24px;background-color: #ff5500;color: #fff;font-size: 14px;">去购买</span>
-            </td>
-        </tr>
-        <tr class="tab2">
-            <td> </td>
-            <td class="r"> </td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- <link rel="stylesheet" href="./css/media.css"> -->
+    <link rel="stylesheet" href="./css/moneyctrl.css">
+</head>
+
+<body>
+    <div class="view">
+
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!-- 顶部 -->
+                <div class="header mui-clearfix">
+                    <div class="mui-pull-left">
+                        <a href="javascript:history.go(-1)" style="display: inline-block;">
+                            <span class="mui-icon mui-icon mui-icon-back" style="color: #fff; font-size: .3rem"></span>
+                        </a>
+                    </div>
+                    <div class="pull_middle">
+                        <h3>省钱控 - 最新优惠</h3>
+                    </div>
+                    <div class="mui-pull-right h_app">
+                        <img src="./images/header_app.png" alt="">
+                    </div>
+                </div>
+                <!-- 主体 -->
+                <div class="main">
+                    <ul class="mui-clearfix">
+                        <!-- 坑 -->
+                    </ul>
+
+
+                    <!-- 分页 -->
+                    <div class="pagenation mui-clearfix">
+
+                        <div class="page_left">
+                            <button>上一页</button>
+                        </div>
+                        <div class="page_middle">
+                            <!-- 坑 -->
+                            <select name="select" id="page">
+                                <!-- 坑 -->
+                                <option value="1" selected>1/3</option>
+                            </select>
+
+                        </div>
+                        <div class="page_right">
+                            <button>下一页</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 底部 -->
+                <div class="footer">
+
+                    <div class="f_top">
+                        <a href="login.html">登录</a>
+                        <a href="register.html">注册</a>
+                        <a href="#" class="back_top">
+                            <span class="fa fa-arrow-up"></span>返回顶部</a>
+
+                    </div>
+                    <div class="f_middle">
+                        <p>
+                            <a href="#">手机app下载</a>
+                            <a href="#" class="mai">慢慢买手机版</a>
+                            <span>- - 掌上比价平台</span>
+                        </p>
+                        <p>m.manmanbuy.com</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/moneyctrl.js"></script>
+
+    <!-- 折扣模板 -->
+    <script type="text/html" id="tpl1">
+        {{each result v i}}
+        <li>
+            <a href="moneyproduct.html">
+                <div class="r_left">
+                    {{@v.productImg2}}
+                </div>
+                <div class="r_right">
+                    <div class="rr_top">
+                        <span>{{v.productName}}</span>
+                        <span>{{v.productPinkage}}</span>
+                    </div>
+                    <div class="rr_bottom">
+                        <span class="mui-pull-left">{{v.productFrom}}|{{v.productTime}}</span>
+                        <span class="mui-icon mui-icon-chat mui-pull-right">{{v.productComCount}}</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+    <!-- 中间分页 -->
+    <!-- <script type="text/html" id="tpl2">
+        <option value="">1/3</option>
+        <option value="">1/3</option>
+    </script> -->
+
+</body>
+
+</html>
