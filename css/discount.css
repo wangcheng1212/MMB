@@ -16,10 +16,17 @@ body {
 .main {
   background-color: #fff;
   padding: .1rem;
+  padding-top: .2rem;
 }
 .main h3 {
   font-size: .2rem;
   color: #666;
+}
+.main h4 {
+  font-size: .18rem;
+  color: #ff872f;
+  font-weight: 700;
+  padding-top: .1rem;
 }
 .main .author {
   font-size: .12rem;
@@ -39,6 +46,9 @@ body {
 .main ul > li {
   text-align: center;
 }
+.main .big_img {
+  height: 100%;
+}
 .main .buy {
   height: 0.7rem;
   line-height: 0.7rem;
@@ -53,36 +63,14 @@ body {
   background-color: #ff9000;
   color: #fff;
 }
-.main #disstorck {
-  font-size: .14rem;
-  width: 1.4rem;
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
-  margin: .1rem auto;
-}
-.main #disstorck strong {
-  width: 50%;
-  color: #f27b04;
-  float: right;
-}
-.main #disstorck li a {
-  width: 1.2rem;
-  margin: 0 auto;
-  border-bottom: 1px dashed #ccc;
-}
-.main #disstorck span {
-  width: 50%;
-}
-.main .ui-border-t {
-  padding-top: .2rem;
-}
-.main .ui-border-t h2 {
+.main h2 {
   font-size: .18rem;
   font-weight: 400;
 }
-.main .ui-border-t .form {
+.main .form {
   position: relative;
 }
-.main .ui-border-t input {
+.main input {
   position: absolute;
   right: 0;
   bottom: .2rem;
@@ -91,41 +79,44 @@ body {
   font-size: .12rem;
   border: none;
 }
-.main .tit {
+.tit {
   font-size: .18rem;
   font-weight: 400;
   height: 0.4rem;
 }
-.main .list {
+.wx {
+  margin-bottom: .2rem;
+}
+.list {
   color: #666;
   font-size: .14rem;
   overflow: hidden;
   margin-bottom: .2rem;
 }
-.main .list li {
+.list li {
   overflow: hidden;
   height: 0.8rem;
   margin-top: .2rem;
 }
-.main .list .userimg {
+.list .userimg {
   float: left;
 }
-.main .list img {
+.list img {
   width: 0.4rem;
   height: 0.4rem;
   border-radius: 50%;
 }
-.main .list .con {
+.list .con {
   padding-left: .5rem;
 }
-.main .list .name {
+.list .name {
   height: 0.2rem;
 }
-.main .list .username {
+.list .username {
   float: left;
   color: #5997c0;
 }
-.main .list .content {
+.list .content {
   float: left;
   width: 100%;
   text-align: left;

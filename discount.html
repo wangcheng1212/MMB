@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- <link rel="stylesheet" href="./css/media.css"> -->
+    <link rel="stylesheet" href="./css/discount.css">
+</head>
+
+<body>
+    <div class="view">
+
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!-- 顶部 -->
+                <div class="header mui-clearfix">
+                    <div class="mui-pull-left">
+                        <a href="javascript:history.go(-1)" style="display: inline-block;">
+                            <span class="mui-icon mui-icon mui-icon-back" style="color: #fff; font-size: .3rem"></span>
+                        </a>
+                    </div>
+                    <div class="pull_middle">
+                        <h3>国内折扣</h3>
+                    </div>
+                    <div class="mui-pull-right h_app">
+                        <img src="./images/header_app.png" alt="">
+                    </div>
+                </div>
+                <!-- 主体 -->
+                <div class="main">
+                   
+                    <!-- 大坑 -->
+                </div>
+
+
+
+                <!-- 底部 -->
+                <div class="footer">
+
+                    <div class="f_top">
+                        <a href="login.html">登录</a>
+                        <a href="register.html">注册</a>
+                        <a href="#" class="back_top">
+                            <span class="fa fa-arrow-up"></span>返回顶部</a>
+
+                    </div>
+                    <div class="f_middle">
+                        <p>
+                            <a href="#">手机app下载</a>
+                            <a href="#" class="mai">慢慢买手机版</a>
+                            <span>- - 掌上比价平台</span>
+                        </p>
+                        <p>m.manmanbuy.com</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/discount.js"></script>
+
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+     <h3>{{v.productName}}</h3>
+     <h4>{{v.productPrice}}</h4>
+        <div class="author">
+            <span>{{v.productFrom}}</span>
+            <span>{{v.productTime}}</span>
+            <span>{{v.productTips}}</span>
+        </div>
+        <div class="summary mui-clearfix">
+            <div class="mui-pull-right s_img">
+                    {{@v.productImg}}
+            </div>
+            <p>{{v.productInfo}}</p>
+            <p>{{v.productInfo1}}</p>
+            <div class="big_img">
+                {{@v.productImg}}
+            </div>
+
+        </div>
+        <div class="buy">
+            <button>前往购买</button>
+        </div>
+        <div class="wx">
+            <img src="./images/mmbweixin2.png" alt="">
+        </div>
+        {{@v.productComment}}
+        {{/each}}
+    
+    </script>
+
+
+</body>
+
+</html>

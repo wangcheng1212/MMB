@@ -150,11 +150,10 @@
 
     <!-- 分页渲染 -->
     <script type="text/html" id="tpl2">
-        <!-- <% for (var i = 1; i<= numPage; i++){%>
-            <option value="{{i}}" <%=p ageId==i? 'selected': '' %>>{{i}}/{{numPage}}</option>
-            <% } %> -->
-            <option value="">1</option>
-            <option value="">1</option>
+        <% for (var i = 1; i<= numPage; i++){%>
+            <option value="{{i}}" <% pageId==i? 'selected': '' %>>{{i}}/{{numPage}}</option>
+            <% } %>
+           
     </script>
 </body>
 
