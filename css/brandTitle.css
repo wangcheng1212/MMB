@@ -1,0 +1,48 @@
+body {
+  font-size: 16px;
+}
+.main {
+  background-color: #fff;
+}
+.main .search {
+  height: 0.5rem;
+  padding: .1rem .83rem 0 .1rem;
+  position: relative;
+}
+.main .search input {
+  height: .3rem;
+  padding: .1rem .2rem;
+  border-radius: .15rem;
+  font-size: .14rem;
+  border: none;
+  background-color: #f1f1f1;
+}
+.main .search button {
+  width: 0.63rem;
+  height: 0.3rem;
+  margin: .1rem;
+  border-radius: .15rem;
+  font-size: .18rem;
+  border: none;
+  background-color: #ff841d;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main .nav {
+  background-color: #f1f1f1;
+  width: 100%;
+  margin-top: .1rem;
+}
+.main .nav .nav_l {
+  width: 100%;
+}
+.main .nav a {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  float: left;
+  padding-left: .1rem;
+  font-size: .14rem;
+  background-image: linear-gradient(#fefefe, #ebebeb);
+}

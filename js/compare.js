@@ -6,7 +6,7 @@ $(function () {
     // 商品详情
 
     $.ajax({
-        url: 'http://mmb.ittun.com/api/getproduct',
+        url: 'http://127.0.0.1:9090/api/getproduct',
         data: {
             productid : productId ,
         },

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- <link rel="stylesheet" href="./css/media.css"> -->
+    <link rel="stylesheet" href="./css/couponproduct.css">
+</head>
+
+<body>
+    <div class="view">
+
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!-- 顶部 -->
+                <div class="header mui-clearfix">
+                    <div class="mui-pull-left">
+                        <a href="javascript:history.go(-1)" style="display: inline-block;">
+                            <span class="mui-icon mui-icon mui-icon-back" style="color: #fff; font-size: .3rem"></span>
+                        </a>
+                    </div>
+                    <div class="pull_middle">
+                        <h3>优惠券</h3>
+                    </div>
+                    <div class="mui-pull-right h_app">
+                        <img src="./images/header_app.png" alt="">
+                    </div>
+                </div>
+                <!-- 主体 -->
+                <div class="main">
+                    <p class="tips">
+                        --点餐前出示手机中的优惠券，即可享受优惠--
+                    </p>
+                    <ul class="mui-clearfix">
+                       <!-- 坑 -->
+                    </ul>
+
+                </div>
+
+                <!-- 底部 -->
+                <div class="footer">
+
+                    <div class="f_top">
+                        <a href="login.html">登录</a>
+                        <a href="register.html">注册</a>
+                        <a href="#" class="back_top">
+                            <span class="fa fa-arrow-up"></span>返回顶部</a>
+
+                    </div>
+                    <div class="f_middle">
+                        <p>
+                            <a href="#">手机app下载</a>
+                            <a href="#" class="mai">慢慢买手机版</a>
+                            <span>- - 掌上比价平台</span>
+                        </p>
+                        <p>m.manmanbuy.com</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <script src="./lib/mui/js/mui.min.js"></script>
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/couponproduct.js"></script>
+
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+        <li>
+            <a href="#">
+                <div class="left">
+                    {{@v.couponProductImg}}
+                </div>
+                <div class="right">
+                    <h3>{{v.couponProductName}}</h3>
+                    <p>{{v.couponProductPrice}}</p>
+                </div>
+                <p class="date">{{v.couponProductTime}}</p>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+</body>
+
+</html>

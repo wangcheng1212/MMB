@@ -1,0 +1,62 @@
+body {
+  font-size: 16px;
+}
+.header {
+  background-color: #f4483e;
+  text-align: center;
+}
+.header .pull_middle {
+  display: inline-block;
+}
+.header .pull_middle h3 {
+  display: inline-block;
+  font-size: .24rem;
+  color: #fff;
+}
+/*--------------------------------- main -----------------------------------------------*/
+.main {
+  background-color: #fff;
+}
+.main .tips {
+  height: 0.3rem;
+  line-height: 0.3rem;
+  text-align: center;
+  font-size: .12rem;
+}
+.main li {
+  padding: .1rem;
+}
+.main a {
+  padding-left: 1.1rem;
+  position: relative;
+}
+.main a .left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main a .left img {
+  width: 100px;
+  height: 80px;
+}
+.main a .right h3 {
+  font-size: .14rem;
+  font-weight: normal;
+}
+.main a .right p {
+  font-weight: 700;
+  color: #333;
+}
+.main a .date {
+  color: #f39d47;
+  font-size: .12rem;
+}
+.mui-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.3);
+}
