@@ -1,0 +1,192 @@
+body {
+    font-size: 16px;
+}
+
+.main {
+    background-color: #fff; // 搜索栏---------------------------------------------------------
+    .search {
+        height: 0.5rem;
+        padding: .1rem .83rem 0 .1rem; // background-color: pink;
+        position: relative;
+        input {
+            height: .3rem;
+            padding: .1rem .2rem;
+            border-radius: .15rem;
+            font-size: .14rem;
+            border: none;
+            background-color: #f1f1f1;
+        }
+        button {
+            width: 0.63rem;
+            height: 0.3rem;
+            margin: .1rem;
+            border-radius: .15rem;
+            font-size: .18rem;
+            border: none;
+            background-color: #ff841d;
+            color: #fff;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    } // nav---------------------------------------------------------
+    .nav {
+        background-color: #f1f1f1;
+        width: 100%;
+        padding-top: .1rem;
+        .nav_l {
+            width: 100%;
+            background-image: linear-gradient(#fefefe, #ebebeb);
+        }
+        a {
+            height: 0.4rem;
+            line-height: 0.4rem;
+            float: left;
+            padding-left: .1rem;
+            font-size: .14rem;
+        }
+    }
+    .rand_title {
+        .r_title {
+            height: 40px;
+            background-color: #eee;
+            font-size: 16px;
+            padding: 10px;
+            color: #874604;
+            border: 2px solid #ccc;
+            font-weight: bold;
+        }
+    } // 主体
+    .rand_cont {
+        height: 100%;
+        li {
+            padding: 10px;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            a {
+                position: relative;
+                span {
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    background-color: #c9c9c9;
+                    text-align: center;
+                    color: #fff;
+                    margin-right: 10px;
+                }
+                p {
+                    padding-left: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                }
+            }
+            &:nth-child(1) span {
+                background-color: #f10e0e;
+            }
+            &:nth-child(2) span {
+                background-color: #ff9314;
+            }
+            &:nth-child(3) span {
+                background-color: #8adf5b;
+            }
+            .ic_right {
+                font-size: 30px;
+                color: #ccc;
+            }
+        }
+    } // 销量排行
+    .num_rand {
+        height: 100%;
+        padding: 10px;
+        li {
+            height: 120px;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .mr_left {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        .mr_right {
+            margin-left: 110px;
+            h3 {
+                font-size: 14px;
+                font-weight: normal;
+                padding: .5px;
+            }
+            .price {
+                font-size: 20px;
+                color: #ea3900;
+                .star {
+                    color: #ff9000;
+                    float: right;
+                    padding-right: 10px;
+                }
+            }
+            .baoprice {
+                padding: 15px;
+                font-size: 12px;
+                color: #666;
+            }
+        }
+    } // 最新评论
+    .newComment {
+        height: 100%;
+        padding: 10px;
+        li {
+            height: 100%;
+            padding: 10px;
+        }
+        .top{
+            height: 100%;
+            display: block;
+        }
+        .mr_left {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        .mr_right {
+            height: 100px;
+            margin-left: 110px;
+            h3 {
+                font-size: 14px;
+                font-weight: normal;
+                padding: .5px;
+            }
+        }
+        .bottom{
+            height: 100%;
+            margin-top: 30px;
+            background-color: #f8f8f8;
+            padding: 10px;
+            position: relative;
+        }
+        .star {
+            color: #ff9000;
+        }
+        .time{
+            float: right;
+            font-size: 12px;
+        }
+        .specific{
+            margin-top: 10px;
+            font-size: 14px;
+
+            &::after{
+                content: '';
+                display: block;
+                width: 0;
+                height: 0;
+                position: absolute;
+                top: -8px;
+                left: 40px;
+                border-bottom: 8px solid #f8f8f8;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+
+            }
+        }
+    }
+}

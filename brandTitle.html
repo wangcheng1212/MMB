@@ -39,14 +39,25 @@
 
                     <!-- nav -->
                     <div class="nav mui-clearfix">
-                        <div class="nav_l">
+                        <div class="nav_l mui-clearfix">
                                 <a href="#">首页 > </a>
                                 <a href="#">全部分类 > </a>
                         </div>
                         
                     </div>
+                    <!-- 品牌 -->
+                    <div class="rand_title">
+                        <div class="r_title">热门品牌排行</div>
+                        
+                    </div>
+                    <ul class="mui-table-view rand_cont"> 
+                        <!-- 坑 -->
+                        
+                    </ul>
                     
                 </div>
+
+
                 <!-- 底部 -->
                 <div class="footer">
 
@@ -83,7 +94,11 @@
 
     <!-- more模板 -->
     <script type="text/html" id="tpl">
-        
+        {{each result v i}}
+        <li class="mui-table-view-cell mui-collapse rc_li">
+            <a class="mui-navigate-right" href="brand.html?brandTitleId={{v.brandTitleId}}">{{v.brandTitle}}</a>
+        </li>
+        {{/each}}
     </script>
 
   

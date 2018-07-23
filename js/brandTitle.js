@@ -5,7 +5,10 @@
         dataType: 'json',
         success: function (info) {  
             console.log(info);
+            $(".rand_cont").html(template("tpl", info));
         }
 
     })
+
+    mui('body').on('tap','a',function(){document.location.href=this.href;});
  })

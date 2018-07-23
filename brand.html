@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="./font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- <link rel="stylesheet" href="./css/media.css"> -->
+    <link rel="stylesheet" href="./css/brand.css">
+</head>
+
+<body>
+    <div class="view">
+
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!-- 顶部 -->
+                <div class="header mui-clearfix">
+                    <div class="mui-pull-left">
+                        <a href="index.html">
+                            <img class="h_logo" src="./images/header_logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="mui-pull-right h_app">
+                        <img src="./images/header_app.png" alt="">
+                    </div>
+                </div>
+                <!-- 主体 -->
+                <div class="main">
+                    <!-- 搜索 -->
+                    <div class="search">
+                        <input type="text" placeholder="请输入你想要比价的商品">
+                        <button>搜索</button>
+                    </div>
+
+                    <!-- nav -->
+                    <div class="nav mui-clearfix">
+                        <div class="nav_l mui-clearfix">
+                            <a href="index.html">首页 > </a>
+                            <a href="category.html">全部分类 > </a>
+                        </div>
+
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="rand_title">
+                        <div class="r_title">哪个牌子好</div>
+
+                    </div>
+
+                    <!-- 牌子好 -->
+                    <ul class="mui-table-view rand_cont">
+                        <!-- 坑 -->
+
+                    </ul>
+
+                    <!-- 销量排行 -->
+                    <div class="rand_title">
+                        <div class="r_title">销量排行</div>
+                    </div>
+                    <div class="num_rand mui-clearfix">
+                        <ul>
+                            <!-- 坑 -->
+                        </ul>
+
+                    </div>
+
+                    <!-- 最新评论 -->
+                    <div class="rand_title">
+                        <div class="r_title">最新评论</div>
+                    </div>
+                    <div class="newComment mui-clearfix">
+                        <ul>
+                            <!-- 坑 -->
+                            
+                        </ul>
+
+                    </div>
+
+
+                    <!-- 底部 -->
+                    <div class="footer">
+
+                        <div class="f_top">
+                            <a href="login.html">登录</a>
+                            <a href="register.html">注册</a>
+                            <a href="#" class="back_top">
+                                <span class="fa fa-arrow-up"></span>返回顶部</a>
+
+                        </div>
+                        <div class="f_middle">
+                            <p>
+                                <a href="#">手机app下载</a>
+                                <a href="#" class="mai">慢慢买手机版</a>
+                                <span>- - 掌上比价平台</span>
+                            </p>
+                            <p>m.manmanbuy.com</p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+        <script src="./lib/zepto/zepto.min.js"></script>
+        <script src="./lib/mui/js/mui.min.js"></script>
+        <script src="./lib/artTemplate/template-web.js"></script>
+        <script src="./js/common.js"></script>
+        <script src="./js/brand.js"></script>
+
+        <!-- 牌子好 -->
+        <script type="text/html" id="tpl">
+            {{each result v i}}
+            <li>
+                <a href="productlist.html?brandTitleId={{v.brandTitleId}}&categoryId={{v.categoryId}}">
+                    <div>
+                        <span>{{v.brandId + +1}}</span>{{v.brandName}}</div>
+                    <div class="mui-icon mui-icon-forward mui-pull-right ic_right"></div>
+                    <p>{{v.brandInfo}}</p>
+                </a>
+            </li>
+            {{/each}}
+        </script>
+
+        <!-- 销量排名 -->
+        <script type="text/html" id="tpl1">
+            {{each result v i}}
+            <li>
+                <a href="#">
+                    <div class="mr_left">
+                        {{@v.productImg}}
+                    </div>
+                    <div class="mr_right">
+                        <h3>
+                            {{v.productName}}
+                        </h3>
+                        <div class="price">
+                            <span>{{v.productPrice}}</span>
+                            <span class="star">★★★★★</span>
+                        </div>
+                        <div class="baoprice">
+                            <span>{{v.productQuote}}&nbsp;</span>
+                            <span>&nbsp;{{v.productCom}}</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+            {{/each}}
+        </script>
+
+        <!-- 最新评论 -->
+        <script type="text/html" id="tpl2">
+
+            {{each result v i}}
+            <li>
+                <a href="#">
+                    <div class="top">
+                        <div class="mr_left">
+                            <img src="./images/flower.jpg" alt="">
+                        </div>
+                        <div class="mr_right">
+                            <h3>
+                                    乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="user">
+                            <span>{{v.comName}}</span>
+                            <span class="star">★★★★★</span>
+                            <span class="time">{{v.comTime}}</span>
+                            <div class="specific">
+                                {{v.comContent}}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            {{/each}}
+        </script>
+
+</body>
+
+</html>
